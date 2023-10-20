@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task2.css">
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+
+        </fieldset>
+        <legend>user details!!</legend>
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" name="username"><br>
+        <br>
+          <label for="address">enter your address: </label>
+          <textarea id="address" name="useraddress" cols="30" rows="10"></textarea><br>
+          <br>
+          <label for="dob">DoB: </label>
+          <input type="date" id="dob" name="userdob"><br>
+          <br>
+          <label for="password">Enter your password: </label>
+          <input type="password" id="password" name="userpassword">
+          <br>
+          select gender: <br>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender">
+          <br>
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender">
+          <br>
+          select favourite movie:
+          <br>
+          <label for="avengers">avengers</label>
+          <input type="checkbox" name="avangers" id="avangers">
+          <br>
+          
+         <label for="thor">thor</label>
+          <input type="checkbox" name="thor" id="thor">
+          <br>
+          <label for="ironman">ironman</label>
+          <input type="checkbox" name="ironman" id="ironman">
+          <br>
+          <button onclick="hey()" id="jss">Submit</button>
+    </form>
+    <script>
+        
+        function hey() {
+            document.getElementById("jss").innerText ="ThankYou";
+            document.getElementById("jss").style.color ="red"
+            document.getElementById("jss").style.backgroundColor = "black"
+            document.getElementById("jss").style.padding = "20px"
+            document.getElementById("jss").style.border = "2px solid yellow"
+
+        }   
+    </script>
+</body>
+</html>
